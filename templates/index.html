@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Recommendation System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        input[type="text"] {
+            width: 300px;
+            padding: 10px;
+            margin-top: 10px;
+            font-size: 16px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        button.recommend-btn {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button.recommend-btn:hover {
+            background-color: #45a049;
+        }
+
+        .movie-images {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .movie-card {
+            text-align: center;
+        }
+
+        .movie-card img {
+            width: 200px;
+            height: auto;
+            margin: 0 10px;
+        }
+
+        .movie-info {
+            margin-top: 10px;
+        }
+
+        .movie-rating {
+            color: #f39c12;
+            font-size: 20px;
+        }
+
+        footer {
+            margin-top: 40px;
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        footer p:last-child {
+            margin-top: 10px;
+        }
+        button{
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Movie Recommendation System</h1>
+        <form action="/recommend" method="post">
+            <label for="movie">Enter your favorite movie:</label><br>
+            <input type="text" id="movie" name="movie" required><br>
+            <button class="recommend-btn" type="submit">Get Recommendations</button>
+        </form>
+        <div class="movie-images">
+            <div class="movie-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGwbZYivRxKqkwul2o3i5JyQ45pJSDarDLn04YMU_m0GKPh-j6z1EHCb9HkjMxehTeXeA&usqp=CAU/200x300" alt="Movie 1">
+                <div class="movie-info">
+                    <p>Avatar</p>
+                    <p class="movie-rating">IMDb: 7.8 ★★★★☆</p>
+                </div>
+            </div>
+            <div class="movie-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYf1daSz2xLcu2gfyf2dqIslHYnKwTXgAwOmM-o7dUzz7aKA0iXXLdKfsKJur_ti3gN5I&usqp=CAU/200x300" alt="Movie 2">
+                <div class="movie-info">
+                    <p>Movie 2</p>
+                    <p class="movie-rating">IMDb: 6.5 ★★★☆☆</p>
+                </div>
+            </div>
+            <div class="movie-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_cod8U8kzI688S2JpemnYtUOkhv9BTuWui_BOxbxIM3GeET8QH9L4cwUnWAOA6EynmQ&usqp=CAU/200x300" alt="Movie 3">
+                <div class="movie-info">
+                    <p>John Carte</p>
+                    <p class="movie-rating">IMDb: 5.9 ★★☆☆☆</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Movie Recommendation System | Contact: bhushanjadhao18@gmail.com | Mobile: 80806xxxxx</p>
+        <p>Thank you for visiting our site!</p>
+    </footer>
+</body>
+</html>
